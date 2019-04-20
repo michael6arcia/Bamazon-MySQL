@@ -31,6 +31,7 @@ function start() {
                 searchProducts();
             }
             if (answer.welcome === "EXIT") {
+                console.log("Thanks for stopping by!");
                 connection.end();
             }
 
@@ -45,9 +46,70 @@ function listProducts() {
             choiceArray.push(results[i].product_name);
         }
         console.log(choiceArray);
+        console.log(['EXIT']);
+
+        selectProducts();
     });
 }
 
 function searchProducts() {
+    inquirer
+        .prompt({
+            name: "searchProducts",
+            type: "input",
+            message: "Please enter the name of the item you'd like to purchase. You will be notified if the item you enter is not available. Enter 'list' to be redirected to our full list of products."
+        })
+        .then(function (answer) {
+            if (answer.searchProducts === "apples") {
+                console.log("You've selected apples.");
+                selectQuantity();
+            }
+            else if (answer.searchProducts === "oranges") {
+                console.log("You've selected oranges.");
+                selectQuantity();
+            }
+            else if (answer.searchProducts === "list") {
+                console.log("Redirecting you the products list...");
+                listProducts();
+            }
+        })
+}
 
+function selectProducts() {
+    inquirer
+        .prompt({
+            name: "selectProducts",
+            type: "input",
+            message: "Please enter an item from the list above to purchase. If you do not want to purchase an item, please enter 'exit' to return to the main menu."
+        })
+        .then(function (answer) {
+            if (answer.selectProducts === "apples") {
+                console.log("You've selected apples.");
+            }
+            if (answer.selectProducts === "oranges") {
+                console.log("You've selected oranges.");
+            }
+            if (answer.selectProducts === "exit") {
+                console.log("Redirecting to main menu...");
+                start();
+            }
+        });
+}
+
+function selectQuantity() {
+    inquirer
+        .prompt({
+            name: "selectQuantity",
+            type: "input",
+            message: "Please enter the desired quantity of the item you selected.",
+            validate: function (value) {
+                if (isNaN(value) === false) {
+                    return true;
+                }
+                return false;
+            }
+        })
+        .then(function (answer) {
+            console.log("You've selected " + answer.selectQuantity + " " + answer.);
+        })
 }
