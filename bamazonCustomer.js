@@ -60,6 +60,7 @@ function searchProducts() {
             message: "Please enter the name of the item you'd like to purchase. You will be notified if the item you enter is not available. Enter 'list' to be redirected to our full list of products."
         })
         .then(function (answer) {
+
             if (answer.searchProducts === "apples") {
                 console.log("You've selected apples.");
                 selectQuantity();
@@ -70,27 +71,35 @@ function searchProducts() {
             }
             if (answer.searchProducts === "milk") {
                 console.log("You've selected milk.");
+                selectQuantity();
             }
             if (answer.searchProducts === "t-shirts") {
                 console.log("You've selected t-shirts.");
+                selectQuantity();
             }
             if (answer.searchProducts === "dresses") {
                 console.log("You've selected dresses.");
+                selectQuantity();
             }
             if (answer.searchProducts === "shoes") {
                 console.log("You've selected shoes.");
+                selectQuantity();
             }
             if (answer.searchProducts === "blankets") {
                 console.log("You've selected blankets.");
+                selectQuantity();
             }
             if (answer.searchProducts === "bicycles") {
                 console.log("You've selected bicycles.");
+                selectQuantity();
             }
             if (answer.searchProducts === "laptops") {
                 console.log("You've selected laptops.");
+                selectQuantity();
             }
             if (answer.searchProducts === "television") {
                 console.log("You've selected shoes.");
+                selectQuantity();
             }
             if (answer.searchProducts === "list") {
                 console.log("Redirecting you the products list...");
@@ -107,35 +116,46 @@ function selectProducts() {
             message: "Please enter an item from the list above to purchase. If you do not want to purchase an item, please enter 'exit' to return to the main menu."
         })
         .then(function (answer) {
+
             if (answer.selectProducts === "apples") {
                 console.log("You've selected apples.");
+                selectQuantity();
             }
             if (answer.selectProducts === "oranges") {
                 console.log("You've selected oranges.");
+                selectQuantity();
             }
             if (answer.selectProducts === "milk") {
                 console.log("You've selected milk.");
+                selectQuantity();
             }
             if (answer.selectProducts === "t-shirts") {
                 console.log("You've selected t-shirts.");
+                selectQuantity();
             }
             if (answer.selectProducts === "dresses") {
                 console.log("You've selected dresses.");
+                selectQuantity();
             }
             if (answer.selectProducts === "shoes") {
                 console.log("You've selected shoes.");
+                selectQuantity();
             }
             if (answer.selectProducts === "blankets") {
                 console.log("You've selected blankets.");
+                selectQuantity();
             }
             if (answer.selectProducts === "bicycles") {
                 console.log("You've selected bicycles.");
+                selectQuantity();
             }
             if (answer.selectProducts === "laptops") {
                 console.log("You've selected laptops.");
+                selectQuantity();
             }
             if (answer.selectProducts === "television") {
                 console.log("You've selected shoes.");
+                selectQuantity();
             }
             if (answer.selectProducts === "exit") {
                 console.log("Redirecting to main menu...");
@@ -158,6 +178,6 @@ function selectQuantity() {
             }
         })
         .then(function (answer) {
-            console.log("You've selected " + answer.selectQuantity + " " + answer.);
+            console.log("You've selected " + answer.selectQuantity);
         })
 }
