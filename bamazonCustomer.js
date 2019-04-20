@@ -64,11 +64,35 @@ function searchProducts() {
                 console.log("You've selected apples.");
                 selectQuantity();
             }
-            else if (answer.searchProducts === "oranges") {
+            if (answer.searchProducts === "oranges") {
                 console.log("You've selected oranges.");
                 selectQuantity();
             }
-            else if (answer.searchProducts === "list") {
+            if (answer.searchProducts === "milk") {
+                console.log("You've selected milk.");
+            }
+            if (answer.searchProducts === "t-shirts") {
+                console.log("You've selected t-shirts.");
+            }
+            if (answer.searchProducts === "dresses") {
+                console.log("You've selected dresses.");
+            }
+            if (answer.searchProducts === "shoes") {
+                console.log("You've selected shoes.");
+            }
+            if (answer.searchProducts === "blankets") {
+                console.log("You've selected blankets.");
+            }
+            if (answer.searchProducts === "bicycles") {
+                console.log("You've selected bicycles.");
+            }
+            if (answer.searchProducts === "laptops") {
+                console.log("You've selected laptops.");
+            }
+            if (answer.searchProducts === "television") {
+                console.log("You've selected shoes.");
+            }
+            if (answer.searchProducts === "list") {
                 console.log("Redirecting you the products list...");
                 listProducts();
             }
@@ -88,6 +112,30 @@ function selectProducts() {
             }
             if (answer.selectProducts === "oranges") {
                 console.log("You've selected oranges.");
+            }
+            if (answer.selectProducts === "milk") {
+                console.log("You've selected milk.");
+            }
+            if (answer.selectProducts === "t-shirts") {
+                console.log("You've selected t-shirts.");
+            }
+            if (answer.selectProducts === "dresses") {
+                console.log("You've selected dresses.");
+            }
+            if (answer.selectProducts === "shoes") {
+                console.log("You've selected shoes.");
+            }
+            if (answer.selectProducts === "blankets") {
+                console.log("You've selected blankets.");
+            }
+            if (answer.selectProducts === "bicycles") {
+                console.log("You've selected bicycles.");
+            }
+            if (answer.selectProducts === "laptops") {
+                console.log("You've selected laptops.");
+            }
+            if (answer.selectProducts === "television") {
+                console.log("You've selected shoes.");
             }
             if (answer.selectProducts === "exit") {
                 console.log("Redirecting to main menu...");
