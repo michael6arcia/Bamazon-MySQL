@@ -1,1 +1,2 @@
-# "Bamazon" -- A digital market running on node.js + MySQL
+# "Bamazon"
+Bamazon is a digital market store running on node.js + MySQL
