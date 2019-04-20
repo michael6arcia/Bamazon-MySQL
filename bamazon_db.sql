@@ -23,22 +23,22 @@ INSERT INTO products (item_id, product_name, department_name, price, stock_quant
 VALUES (03, "milk", "grocery", 4.99, 20);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (04, "t-shirt", "clothing", 9.99, 25);
+VALUES (04, "t-shirts", "clothing", 9.99, 25);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (05, "dress", "clothing", 9.99, 25);
+VALUES (05, "dresses", "clothing", 9.99, 25);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUES (06, "shoes", "clothing", 14.99, 40);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (07, "blanket", "home_goods", 14.99, 40);
+VALUES (07, "blankets", "home_goods", 14.99, 40);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (08, "bicycle", "sporting_goods", 99.99, 20);
+VALUES (08, "bicycles", "sporting_goods", 99.99, 20);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (09, "laptop", "electronics", 199.99, 10);
+VALUES (09, "laptops", "electronics", 199.99, 10);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (10, "television", "electronics", 499.99, 15);
+VALUES (10, "televisions", "electronics", 499.99, 15);
